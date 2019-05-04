@@ -1,0 +1,118 @@
+Port 80 requires elevated privileges
+searching...
+RowDataPacket {
+  _id: 1,
+  name: '郭青云',
+  nick_name: 'Chivan',
+  phone: '15822367057',
+  password: '123456',
+  avatar: 'http://wd.chivan.cn',
+  status: 1,
+  level: 1,
+  sex: 0,
+  score: 20,
+  money: 10,
+  address: '北京市海淀区',
+  description: '无',
+  regist_time: '2019/04/20 10:20:05',
+  last_login: '2019/04/20 10:20:05',
+  last_modify: '2019/04/20 10:20:05' }
+[0mGET /users/login?name=%E9%83%AD%E9%9D%92%E4%BA%91&password=123456 [32m200 [0m11.060 ms - 354[0m
+searching...
+userName:Chivan
+[0mPUT /users/regist?name=Chivan&password=123123 [32m200 [0m7.653 ms - 27[0m
+searching...
+RowDataPacket {
+  _id: 2,
+  name: 'Chivan',
+  nick_name: null,
+  phone: null,
+  password: '123123',
+  avatar: null,
+  status: null,
+  level: null,
+  sex: null,
+  score: null,
+  money: null,
+  address: null,
+  description: null,
+  regist_time: null,
+  last_login: null,
+  last_modify: null }
+[0mGET /users/login?name=Chivan&password=123123 [32m200 [0m1.688 ms - 266[0m
+searching...
+undefined
+[0mGET /users/login?name=ABC&password=123123 [32m200 [0m1.631 ms - 32[0m
+[0mGET /favicon.ico [33m404 [0m303.512 ms - 1182[0m
+searching...
+undefined
+[0mGET /users/login?name=ABC&password=123123 [36m304 [0m2.063 ms - -[0m
+searching...
+undefined
+[0mGET /users/login?name=ABC&password=123123 [36m304 [0m1.846 ms - -[0m
+searching...
+RowDataPacket {
+  _id: 2,
+  name: 'Chivan',
+  nick_name: null,
+  phone: null,
+  password: '123123',
+  avatar: null,
+  status: null,
+  level: null,
+  sex: null,
+  score: null,
+  money: null,
+  address: null,
+  description: null,
+  regist_time: null,
+  last_login: null,
+  last_modify: null }
+[0mGET /users/login?name=Chivan&password=123123 [32m200 [0m1.680 ms - 266[0m
+searching...
+undefined
+[0mGET /users/login?name=ABC&password=123123 [32m200 [0m1.242 ms - 32[0m
+[0mGET /favicon.ico [33m404 [0m13.379 ms - 1182[0m
+searching...
+RowDataPacket {
+  _id: 2,
+  name: 'Chivan',
+  nick_name: null,
+  phone: null,
+  password: '123123',
+  avatar: null,
+  status: null,
+  level: null,
+  sex: null,
+  score: null,
+  money: null,
+  address: null,
+  description: null,
+  regist_time: null,
+  last_login: null,
+  last_modify: null }
+[0mGET /users/login?name=Chivan&password=123123 [32m200 [0m1.304 ms - 266[0m
+searching...
+RowDataPacket {
+  _id: 2,
+  name: 'Chivan',
+  nick_name: null,
+  phone: null,
+  password: '123123',
+  avatar: null,
+  status: null,
+  level: null,
+  sex: null,
+  score: null,
+  money: null,
+  address: null,
+  description: null,
+  regist_time: null,
+  last_login: null,
+  last_modify: null }
+[0mGET /users/login?name=Chivan&password=123123 [32m200 [0m1.260 ms - 266[0m
+searching...
+undefined
+[0mGET /users/login?name=ABC&password=123123 [36m304 [0m1.637 ms - -[0m
+[0mGET /users/regist?name=Chivan&password=123123 [33m404 [0m9.288 ms - 1182[0m
+[0mGET /stylesheets/style.css [32m200 [0m3.625 ms - 111[0m
