@@ -43,13 +43,23 @@ router.post('/regist', function (req, res, next) {
   if(isEmpty){
       res.send("{result:'error', status:'101'}");
   }else{
-      conn.query(userSql.regist,[name,password, phone],function (err, result) {
-        if(err){
-          res.send("{result:'error', status:'102'}");
-        }else{
-          res.send("{result:'ok', status:'100'}");
-        }
+      conn.query(userSql.login, [name, password], function (err, result) {
+          if (err) {
+              console.log(err);
+              res.send("{result:'error', status:'201'}");
+          } else {
+              console.log(JSON.stringify(result[0]));
+              // res.send("{result:" + JSON.stringify(result[0]) + ", status:'200'}");
+              conn.query(userSql.regist,[name,password, phone],function (err, result) {
+                  if(err){
+                      res.send("{result:'error', status:'102'}");
+                  }else{
+                      res.send("{result:'ok', status:'100'}");
+                  }
+              });
+          }
       });
+
   }
 
 });
