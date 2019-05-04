@@ -35,7 +35,7 @@ router.post('/regist', function (req, res, next) {
   let name = params['name'];
   let phone = params['phone'];
   let password = params['password'];
-  console.log(req.body.data);
+  console.log(req.body);
   console.log(req.params);
   console.log(req.query);
   console.log(name == null);
