@@ -11,13 +11,13 @@ router.get('/', function(req, res, next) {
 router.get('/login', function (req, res, next) {
     console.log(Date.now()+':user login');
   let params = req.query;
-  let name = params['name'];
+  let phone = params['phone'];
   let password = params['password'];
     let isEmpty =(name == null || password == null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':'101'});
     }else {
-        conn.query(userSql.login, [name, password], function (err, result) {
+        conn.query(userSql.login, [phone, password], function (err, result) {
             if (err) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':'201'});
@@ -43,7 +43,7 @@ router.post('/regist', function (req, res, next) {
   if(isEmpty){
       res.jsonp({'result':'error', 'status':'101'});
   }else{
-      conn.query(userSql.login, [name, password], function (err, result) {
+      conn.query(userSql.isPhoneExist, [phone], function (err, result) {
           if (err) {
               console.log(err);
               res.jsonp({'result':'error', 'status':'101'});
