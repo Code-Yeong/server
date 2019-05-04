@@ -50,7 +50,7 @@ router.post('/regist', function (req, res, next) {
           } else {
               console.log(result);
               // res.send("{result:" + JSON.stringify(result[0]) + ", status:'200'}");
-              if(result!=null && result.length > 0) {
+              if(result!=null && result.length === 0) {
                   conn.query(userSql.regist, [name, password, phone], function (err, result) {
                       if (err) {
                           res.jsonp({'result':'error', 'status':'102'});
