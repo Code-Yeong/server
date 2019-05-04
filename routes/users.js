@@ -48,7 +48,7 @@ router.post('/regist', function (req, res, next) {
               console.log(err);
               res.send("{result:'error', status:'201'}");
           } else {
-              console.log(JSON.stringify(result[0]));
+              console.log(result);
               // res.send("{result:" + JSON.stringify(result[0]) + ", status:'200'}");
               conn.query(userSql.regist,[name,password, phone],function (err, result) {
                   if(err){
