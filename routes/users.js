@@ -27,7 +27,7 @@ router.get('/login', function (req, res, next) {
 
 router.put('/regist', function (req, res, next) {
   console.log(Date.now()+':user login');
-  let params = req.query;
+  let params = req.body;
   let name = params['name'];
   let phone = params['phone'];
   let password = params['password'];
