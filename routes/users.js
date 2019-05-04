@@ -26,7 +26,7 @@ router.get('/login', function (req, res, next) {
                 res.jsonp({'result':'error', 'status':'201'});
             } else {
                 console.log(result[0]);
-                res.jsonp({'result':JSON.stringify(result[0]), 'status':'200'});
+                res.jsonp({'result':result[0], 'status':'200'});
             }
         });
     }
