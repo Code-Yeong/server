@@ -26,12 +26,15 @@ router.get('/login', function (req, res, next) {
 });
 
 router.put('/regist', function (req, res, next) {
-  console.log('searching...');
+  console.log(Date.now()+':user login');
   let params = req.query;
   let name = params['name'];
+  let phone = params['phone'];
   let password = params['password'];
-  console.log('userName:'+name);
-  conn.query(userSql.regist,[name,password],function (err, result) {
+  console.log(req.body);
+  console.log(req.params);
+  console.log(req.query);
+  conn.query(userSql.regist,[name,password, phone],function (err, result) {
     // console.log(err);
     if(err){
       console.log(err);
