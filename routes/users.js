@@ -15,15 +15,15 @@ router.get('/login', function (req, res, next) {
   let password = params['password'];
     let isEmpty =(name == null || password == null);
     if(isEmpty){
-        res.send("{'result':'error', 'status':'101'}");
+        res.jsonp({'result':'error', 'status':'101'});
     }else {
         conn.query(userSql.login, [name, password], function (err, result) {
             if (err) {
                 console.log(err);
-                res.send("{'result':'error', 'status':'201'}");
+                res.jsonp({'result':'error', 'status':'201'});
             } else {
                 console.log(result[0]);
-                res.send("{'result':" + JSON.stringify(result[0]) + ", 'status':'200'}");
+                res.jsonp({'result':" + JSON.stringify(result[0]) + ", 'status':'200'});
             }
         });
     }
@@ -41,25 +41,25 @@ router.post('/regist', function (req, res, next) {
   console.log(name == null);
   let isEmpty =(name == null || phone == null || password == null);
   if(isEmpty){
-      res.send("{'result':'error', 'status':'101'}");
+      res.jsonp({'result':'error', 'status':'101'});
   }else{
       conn.query(userSql.login, [name, password], function (err, result) {
           if (err) {
               console.log(err);
-              res.send("{'result':'error', 'status':'101'}");
+              res.jsonp({'result':'error', 'status':'101'});
           } else {
               console.log(result);
               // res.send("{result:" + JSON.stringify(result[0]) + ", status:'200'}");
               if(result!=null && result.length > 0) {
                   conn.query(userSql.regist, [name, password, phone], function (err, result) {
                       if (err) {
-                          res.send("{'result':'error', 'status':'102'}");
+                          res.jsonp({'result':'error', 'status':'102'});
                       } else {
-                          res.send("{'result':'ok', 'status':'100'}");
+                          res.jsonp({'result':'ok', 'status':'100'});
                       }
                   });
               }else{
-                  res.send("{'result':'error','status':103}");
+                  res.jsonp({'result':'error','status':103});
               }
           }
       });
