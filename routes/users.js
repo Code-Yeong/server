@@ -13,7 +13,10 @@ router.get('/login', function (req, res, next) {
   let params = req.query;
   let phone = params['phone'];
   let password = params['password'];
-    let isEmpty =(name == null || password == null);
+    console.log(req.body);
+    console.log(req.params);
+    console.log(req.query);
+    let isEmpty =(phone == null || password == null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':'101'});
     }else {
