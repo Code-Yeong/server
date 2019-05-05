@@ -1,10 +1,11 @@
 let errorCode={
-    'loginSuccess':1000,
-    'loginFailed':1001,
-    'registSuccess':1002,
-    'registFailed':1003,
-    'accountAlreadyExist':1004,
-    'parametersError':1005,
+    'loginSuccess':100,
+    'registSuccess':100,
+    'loginFailed':101,
+    'registFailed':101,
+    'accountAlreadyExist':102,
+    'parametersError':103,
+    'dbError':104,
 };
 
 module.exports = errorCode;
