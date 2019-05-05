@@ -112,5 +112,30 @@ router.post('/addAddress', function (req, res, next) {
     }
 });
 
+router.get('/getAllAddress', function (req, res, next) {
+    console.log(Date.now()+':user get all address');
+    // let params = req.body;
+    let params = req.query;
+    let cusId = params['id'];
+    console.log(req.body);
+    console.log(req.params);
+    console.log(req.query);
+    console.log(cusId == null);
+    let isEmpty =(cusId == null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(userSql.getAllAddress, [cusId], function (err, result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+            }
+        });
+
+    }
+});
+
 
 module.exports = router;
