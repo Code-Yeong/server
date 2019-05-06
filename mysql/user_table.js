@@ -6,6 +6,8 @@ let user = {
     'searchAddress':'select * from Adderss where cusId=? and status!=0',
     'addAddress':'insert into Adderss(cusId,name,phone,address,status,midifyTime) values(?,?,?,?,?,?)',
     'getAllAddress':'select * from Adderss where cusId=?',
+    'updateAddress':'update Adderss set name=?,phone=?,address=?,status=?,midifyTime=? where id=?',
+    'deleteAddress':'update Adderss set status=?,midifyTime=? where id=?',
 };
 
 module.exports = user;

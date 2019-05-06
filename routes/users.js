@@ -112,6 +112,63 @@ router.post('/addAddress', function (req, res, next) {
     }
 });
 
+router.post('/updateAddress', function (req, res, next) {
+    // 修改地址 POST: /updateAddress?id=[address id]&name=[new name]&phone=[new phone]&status=[new status]&address=[new address]
+    console.log(Date.now()+':user update address');
+    let params = req.body;
+    // let params = req.query;
+    let id = params['id'];
+    let name = params['name'];
+    let phone = params['phone'];
+    let status = params['status'];
+    let address = params['address'];
+    console.log(req.body);
+    console.log(req.params);
+    console.log(req.query);
+    console.log(name == null);
+    let isEmpty =(id==null || name == null || phone == null || status == null || address == null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(userSql.updateAddress, [name,phone,address,status,Date.now(),id], function (err, result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
+            }
+        });
+
+    }
+});
+
+router.post('/deleteAddress', function (req, res, next) {
+    //删除地址 POST: /deleteAddress?id=[address id]&status=[new status]
+    console.log(Date.now()+':user delete address');
+    let params = req.body;
+    // let params = req.query;
+    let id = params['id'];
+    let status = params['status'];
+    console.log(req.body);
+    console.log(req.params);
+    console.log(req.query);
+    console.log(name == null);
+    let isEmpty =(id==null || status == null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(userSql.deleteAddress, [status,Date.now(),id], function (err, result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
+            }
+        });
+
+    }
+});
+
 router.get('/getAllAddress', function (req, res, next) {
     console.log(Date.now()+':user get all address');
     // let params = req.body;
