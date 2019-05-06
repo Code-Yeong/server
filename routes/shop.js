@@ -15,3 +15,5 @@ router.get('/getAllShop', function(req, res, next) {
         }
     });
 });
+
+module.exports = router;
