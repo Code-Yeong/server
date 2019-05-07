@@ -30,7 +30,7 @@ router.get('/login', function (req, res, next) {
                     console.log(result[0]);
                     let userId = result[0]['_id'];
                     let userInfo = result[0];
-                    conn.query(userSql.searchAddress,[userId],function (err,result) {
+                    conn.query(userSql.getAllAddress,[userId],function (err,result) {
                         userInfo['address'] = result;
                         console.log(result);
                         res.jsonp({'result':userInfo, 'status':errorCode.loginSuccess});
