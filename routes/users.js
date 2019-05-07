@@ -146,12 +146,10 @@ router.post('/deleteAddress', function (req, res, next) {
     //删除地址 POST: /deleteAddress?id=[address id]&status=[new status]
     console.log(Date.now()+':user delete address');
     let params = req.body;
-    // let params = req.query;
     let id = params['id'];
     console.log(req.body);
     console.log(req.params);
     console.log(req.query);
-    console.log(name == null);
     let isEmpty =(id==null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
