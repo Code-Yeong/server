@@ -30,7 +30,7 @@ router.post('/addOrder',function (req,res,next) {
 });
 
 router.get('/getCusOrder',function (req,res,next) {
-    let params=req.params;
+    let params=req.query;
     let cusId=params['cusId'];
     let isEmpty=(cusId==null);
     if(isEmpty){
@@ -48,7 +48,7 @@ router.get('/getCusOrder',function (req,res,next) {
 });
 
 router.get('/getShopOrder',function (req,res,next) {
-    let params=req.params;
+    let params=req.query;
     let shopId=params['shopId'];
     let isEmpty=(shopId==null);
     if(isEmpty){
@@ -66,7 +66,7 @@ router.get('/getShopOrder',function (req,res,next) {
 });
 
 router.get('/getBarberOrder',function (req,res,next) {
-    let params=req.params;
+    let params=req.query;
     let barberId=params['barberId'];
     let isEmpty=(barberId==null);
     if(isEmpty){
