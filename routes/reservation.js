@@ -7,7 +7,7 @@ let router = express.Router();
 // "addOrder":"INSERT INTO Reservation VALUES (?, ?, ?, ?, ?, 1, '', 0, 0, ?,'','')",
 router.post('/addOrder',function (req,res,next) {
     let params=req.body;
-    let cusid = params['cusId'];
+    let cusId = params['cusId'];
     let barberId = params['barberId'];
     let shopId=params['shopId'];
     let serveTime=params['serveTime'];
@@ -16,7 +16,7 @@ router.post('/addOrder',function (req,res,next) {
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
-        conn.query(orderSql.addOrder,[cusid,barberId,shopId,serveTime,money,Date.now()],function (err,result) {
+        conn.query(orderSql.addOrder,[cusId,barberId,shopId,serveTime,money,Date.now()],function (err,result) {
             if (err) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
