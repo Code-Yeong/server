@@ -57,7 +57,7 @@ router.get('/getShopOrder',function (req,res,next) {
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
-        conn.query(orderSql.getShopOrder,[cusId],function (err,result) {
+        conn.query(orderSql.getShopOrder,[shopId],function (err,result) {
             if (err) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
