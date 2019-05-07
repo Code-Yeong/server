@@ -30,6 +30,9 @@ router.post('/addOrder',function (req,res,next) {
 });
 
 router.get('/getCusOrder',function (req,res,next) {
+    console.log(req.query);
+    console.log(req.body);
+    console.log(req.params);
     let params=req.query;
     let cusId=params['cusId'];
     let isEmpty=(cusId==null);
