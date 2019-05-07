@@ -148,16 +148,15 @@ router.post('/deleteAddress', function (req, res, next) {
     let params = req.body;
     // let params = req.query;
     let id = params['id'];
-    let status = params['status'];
     console.log(req.body);
     console.log(req.params);
     console.log(req.query);
     console.log(name == null);
-    let isEmpty =(id==null || status == null);
+    let isEmpty =(id==null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
-        conn.query(userSql.deleteAddress, [status,Date.now(),id], function (err, result) {
+        conn.query(userSql.deleteAddress, [Date.now(),id], function (err, result) {
             if (err) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
