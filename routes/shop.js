@@ -11,7 +11,6 @@ router.get('/getAllShop', function(req, res, next) {
             console.log(err);
             res.jsonp({'result':'error', 'status':errorCode.dbError});
         } else {
-            console.log(result);
             let urls='';
             for(let m=0;m<result.length;m++){
                 let shop = result[m];
@@ -22,7 +21,6 @@ router.get('/getAllShop', function(req, res, next) {
             urls = urls.substring(0,urls.length-1);
             if(urls.length>0) {
                 conn.query(urls, [], function (err, barbers) {
-
                     if (err) {
                         console.log(err);
                         res.jsonp({'result': 'error', 'status': errorCode.dbError});
@@ -33,7 +31,6 @@ router.get('/getAllShop', function(req, res, next) {
                             s.barber = barbers[i];
                            result[i]=s;
                         }
-
                         res.jsonp({'result': result, 'status': errorCode.loginSuccess});
                     }
                 });
@@ -42,6 +39,25 @@ router.get('/getAllShop', function(req, res, next) {
             }
         }
     });
+});
+
+router.get('/shopStatistic',function (req,res,next) {
+   let params=req.query;
+   let shopId=params['shopId'];
+   let isEmpty=(shopId==null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(shopSql.getShopStatistic, [shopId], function (err, result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+            }
+        });
+
+    }
 });
 
 module.exports = router;
