@@ -4,7 +4,7 @@ let user = {
     'isPhoneExist': 'select * from User where phone=?',
     'updateLastLogin': 'update User set last_login=? where _id=?',
     'addAddress':'insert into Adderss(cusId,name,phone,address,status,midifyTime) values(?,?,?,?,?,?)',
-    'getAllAddress':'select * from Adderss where cusId=? and status!=0 order by last_modify DESC',
+    'getAllAddress':'select * from Adderss where cusId=? and status!=0 order by midifyTime DESC',
     'updateAddress':'update Adderss set name=?,phone=?,address=?,status=?,midifyTime=? where id=?',
     'deleteAddress':'update Adderss set status=0,midifyTime=? where id=?',
 };
