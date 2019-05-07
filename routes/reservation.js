@@ -29,4 +29,58 @@ router.post('/addOrder',function (req,res,next) {
 
 });
 
+router.get('/getCusOrder',function (req,res,next) {
+    let params=req.params;
+    let cusId=params['cusId'];
+    let isEmpty=(cusId==null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(orderSql.getCusOrder,[cusId],function (err,result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+            }
+        });
+    }
+});
+
+router.get('/getShopOrder',function (req,res,next) {
+    let params=req.params;
+    let shopId=params['shopId'];
+    let isEmpty=(shopId==null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(orderSql.getShopOrder,[cusId],function (err,result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+            }
+        });
+    }
+});
+
+router.get('/getBarberOrder',function (req,res,next) {
+    let params=req.params;
+    let barberId=params['barberId'];
+    let isEmpty=(barberId==null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(orderSql.getBarberOrder,[barberId],function (err,result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+            }
+        });
+    }
+});
+
 module.exports=router;
