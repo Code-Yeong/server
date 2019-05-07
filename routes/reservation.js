@@ -7,7 +7,7 @@ let router = express.Router();
 // "addOrder":"INSERT INTO Reservation VALUES (?, ?, ?, ?, ?, 1, '', 0, 0, ?,'','')",
 router.post('/addOrder',function (req,res,next) {
     let params=req.body;
-    let cusid = params['cudId'];
+    let cusid = params['cusId'];
     let barberId = params['barberId'];
     let shopId=params['shopId'];
     let serveTime=params['serveTime'];
