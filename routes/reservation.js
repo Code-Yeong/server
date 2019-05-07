@@ -12,7 +12,7 @@ router.post('/addOrder',function (req,res,next) {
     let shopId=params['shopId'];
     let serveTime=params['serveTime'];
     let money=params['money'];
-    let isEmpty=(cusid==null || barberId ==null||shopId==null||serveTime==null||money==null);
+    let isEmpty=(cusId==null || barberId ==null||shopId==null||serveTime==null||money==null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
