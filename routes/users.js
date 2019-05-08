@@ -137,6 +137,8 @@ router.post('/updateAddress', function (req, res, next) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
             } else {
+                console.log("----");
+                console.log(status==="2");
                 if(status === "2"){
                     conn.query(addressSql.UpdateDefaultAddress, [cusId], function (err, result) {
                         if (err) {
