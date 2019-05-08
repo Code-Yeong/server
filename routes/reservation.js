@@ -12,11 +12,12 @@ router.post('/addOrder',function (req,res,next) {
     let shopId=params['shopId'];
     let serveTime=params['serveTime'];
     let money=params['money'];
-    let isEmpty=(cusId==null || barberId ==null||shopId==null||serveTime==null||money==null);
+    let serveName = params['serveName'];
+    let isEmpty=(cusId==null || barberId ==null||shopId==null||serveTime==null||money==null||serveName == null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
-        conn.query(orderSql.addOrder,[cusId,barberId,shopId,serveTime,money,Date.now()],function (err,result) {
+        conn.query(orderSql.addOrder,[cusId,barberId,shopId,serveTime,serveName,money,Date.now()],function (err,result) {
             if (err) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
@@ -76,6 +77,23 @@ router.get('/getBarberOrder',function (req,res,next) {
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
         conn.query(orderSql.getBarberOrder,[barberId],function (err,result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+            }
+        });
+    }
+});
+router.get('/getBarberUnStartOrder',function (req,res,next) {
+    let params=req.query;
+    let barberId=params['barberId'];
+    let isEmpty=(barberId==null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(orderSql.getBarberUnStartOrder,[barberId],function (err,result) {
             if (err) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
