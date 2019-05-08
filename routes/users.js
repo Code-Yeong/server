@@ -2,6 +2,7 @@ let errorCode =  require("../utils/error_code");
 let express = require('express');
 let conn = require('../mysql/mysql');
 let userSql = require('../mysql/user_table');
+let addressSql = require('../mysql/address_table');
 let router = express.Router();
 
 /* GET users listing. */
@@ -117,7 +118,7 @@ router.post('/updateAddress', function (req, res, next) {
     console.log(Date.now()+':user update address');
     let params = req.body;
     // let params = req.query;
-    let id = params['id'];
+    let cusId = params['id'];
     let name = params['name'];
     let phone = params['phone'];
     let status = params['status'];
@@ -126,19 +127,28 @@ router.post('/updateAddress', function (req, res, next) {
     console.log(req.params);
     console.log(req.query);
     console.log(name == null);
-    let isEmpty =(id==null || name == null || phone == null || status == null || address == null);
+    let isEmpty =(cusId==null || name == null || phone == null || status == null || address == null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
-        conn.query(userSql.updateAddress, [name,phone,address,status,Date.now(),id], function (err, result) {
+
+        conn.query(userSql.updateAddress, [name,phone,address,status,Date.now(),cusId], function (err, result) {
             if (err) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
             } else {
-                res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
+                if(status === "2"){
+                    conn.query(addressSql.UpdateDefaultAddress, [cusId], function (err, result) {
+                        if (err) {
+                            console.log(err);
+                            res.jsonp({'result':'error', 'status':errorCode.dbError});
+                        } else {
+                            res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
+                        }
+                    });
+                }
             }
         });
-
     }
 });
 
