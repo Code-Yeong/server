@@ -128,7 +128,7 @@ router.post('/updateAddress', function (req, res, next) {
     console.log(req.params);
     console.log(req.query);
     console.log(name == null);
-    let isEmpty =(id==null || name == null || phone == null || status == null || address == null);
+    let isEmpty =(id==null ||cusId==null || name == null || phone == null || status == null || address == null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
@@ -141,7 +141,7 @@ router.post('/updateAddress', function (req, res, next) {
                 console.log("----");
                 console.log(status==="2");
                 if(status === "2"){
-                    conn.query(addressSql.UpdateDefaultAddress, [cusId], function (err, result) {
+                    conn.query(addressSql.UpdateDefaultAddress, [cusId,id], function (err, result) {
                         if (err) {
                             console.log(err);
                             res.jsonp({'result':'error', 'status':errorCode.dbError});
@@ -149,6 +149,8 @@ router.post('/updateAddress', function (req, res, next) {
                             res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
                         }
                     });
+                }else{
+                    res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
                 }
             }
         });
