@@ -118,7 +118,8 @@ router.post('/updateAddress', function (req, res, next) {
     console.log(Date.now()+':user update address');
     let params = req.body;
     // let params = req.query;
-    let cusId = params['id'];
+    let id = params['id'];
+    let cusId = params['cusId'];
     let name = params['name'];
     let phone = params['phone'];
     let status = params['status'];
@@ -127,12 +128,12 @@ router.post('/updateAddress', function (req, res, next) {
     console.log(req.params);
     console.log(req.query);
     console.log(name == null);
-    let isEmpty =(cusId==null || name == null || phone == null || status == null || address == null);
+    let isEmpty =(id==null || name == null || phone == null || status == null || address == null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
 
-        conn.query(userSql.updateAddress, [name,phone,address,status,Date.now(),cusId], function (err, result) {
+        conn.query(userSql.updateAddress, [name,phone,address,status,Date.now(),id], function (err, result) {
             if (err) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
