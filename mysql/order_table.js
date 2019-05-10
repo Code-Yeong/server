@@ -5,6 +5,7 @@ let orderSql = {
     "getBarberOrder":"select * from Reservation where barberId=? order by createTime DESC",
     "getShopOrder":"select * from Reservation where shopId=? order by createTime DESC",
     "getCusOrder":"select r.id,r.createTime,r.serveTime,r.finshedTime,r.commentTime,r.cusId,r.barberId,r.shopId,r.serveName,r.status,r.money,r.comment,b.name as staffName,b.avatar as avatar from Reservation r,Barber b where r.barberId=b.id and r.cusId=? order by status ASC,createTime DESC",
+    "getStaffOrder":"select r.id,r.createTime,r.serveTime,r.finshedTime,r.commentTime,r.cusId,r.barberId,r.shopId,r.serveName,r.status,r.money,r.comment,u.name as cusName,u.avatar as avatar from Reservation r,User u where r.cusId=u.id and r.barberId=? order by status ASC,createTime DESC",
     "getBarberUnStartOrder":"select * from Reservation where barberId=? and status<3",
 };
 
