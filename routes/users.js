@@ -109,7 +109,6 @@ router.post('/addAddress', function (req, res, next) {
                 res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
             }
         });
-
     }
 });
 
