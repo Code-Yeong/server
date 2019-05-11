@@ -25,7 +25,7 @@ router.get('/login', function (req, res, next) {
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
             } else {
                 if(result!=null && result.length > 0) {
-                    res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+                    res.jsonp({'result':result[0], 'status':errorCode.loginSuccess});
                 }else{
                     res.jsonp({'result':null, 'status':errorCode.loginFailed});
                 }
