@@ -50,6 +50,29 @@ router.post('/updateOrderStatus',function (req,res,next) {
 
 });
 
+router.post('/commentOrder',function (req,res,next) {
+    let params=req.body;
+    let id = params['id'];
+    let barberScore = params['barberScore'];
+    let shopScore = params['shopScore'];
+    let content = params['content'];
+    let isEmpty=(id==null || barberScore ==null||shopScore==null || content ==null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(orderSql.commentOrder,[content,barberScore,shopScore,Date.now(),id],function (err,result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
+            }
+        });
+    }
+
+
+});
+
 router.get('/getCusOrder',function (req,res,next) {
     console.log(req.query);
     console.log(req.body);
