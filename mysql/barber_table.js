@@ -1,5 +1,5 @@
 let BarberSql = {
-    'regist':"insert into Barber(name, password,phone,regist_time,last_modify,status,level,sex,score,money) values(?,?,?,?,?,?,?,?,?,?)",
+    'regist':"insert into Barber(id,name, password,phone,regist_time,last_modify,status,level,sex,score,money) values(?,?,?,?,?,?,?,?,?,?,?)",
     'login':'select * from Barber where phone =? and password=?',
     'isPhoneExist': 'select * from Barber where phone=?',
     'updateLastLogin': 'update Barber set last_login=? where _id=?',

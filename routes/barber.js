@@ -50,7 +50,7 @@ router.post('/regist', function (req, res, next) {
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
             } else {
                 if(result!=null && result.length === 0) {
-                    conn.query(barberSql.regist, [name, password, phone,Date.now(),Date.now(),1,1,0,0,0.0], function (err, result) {
+                    conn.query(barberSql.regist, [Date.now(),name, password, phone,Date.now(),Date.now(),1,1,0,0,0.0], function (err, result) {
                         if (err) {
                             res.jsonp({'result':'error', 'status':errorCode.dbError});
                         } else {
