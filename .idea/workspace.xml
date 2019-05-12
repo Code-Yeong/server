@@ -4,6 +4,7 @@
     <list default="true" id="a5b79adb-4dab-4c5f-9eba-3763f4d4ba48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/order_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/order_table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reservation.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,20 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/reservation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="52" column="26" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="26" />
+            <state relative-caret-position="201">
+              <caret line="19" column="126" selection-start-line="19" selection-start-column="126" selection-end-line="19" selection-end-column="126" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql/order_table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="15">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -109,7 +110,6 @@
       <find>updateAddress</find>
       <find>UpdateDefaultAddress</find>
       <find>add</find>
-      <find>addOrder</find>
       <find>getBarberUnStartOrder</find>
       <find>getCusOrder</find>
       <find>updateOrderStatus</find>
@@ -118,6 +118,8 @@
       <find>login</find>
       <find>User</find>
       <find>commentOrder</find>
+      <find>shopScpre</find>
+      <find>addOrder</find>
     </findStrings>
     <replaceStrings>
       <replace>Barber</replace>
@@ -149,8 +151,8 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/mysql/barber_table.js" />
         <option value="$PROJECT_DIR$/routes/barber.js" />
-        <option value="$PROJECT_DIR$/routes/reservation.js" />
         <option value="$PROJECT_DIR$/mysql/order_table.js" />
+        <option value="$PROJECT_DIR$/routes/reservation.js" />
       </list>
     </option>
   </component>
@@ -238,20 +240,6 @@
       <updated>1555087377838</updated>
       <workItem from="1555087413019" duration="2135000" />
       <workItem from="1556902547185" duration="13867000" />
-    </task>
-    <task id="LOCAL-00003" summary="修改登处理逻辑">
-      <created>1556973948743</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1556973948743</updated>
-    </task>
-    <task id="LOCAL-00004" summary="修改登处理逻辑">
-      <created>1556974163013</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1556974163013</updated>
     </task>
     <task id="LOCAL-00005" summary="修改登处理逻辑">
       <created>1556974220396</created>
@@ -582,11 +570,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557604248360</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="添加订单表">
+      <created>1557604559657</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1557604559657</updated>
+    </task>
+    <task id="LOCAL-00053" summary="添加订单表">
+      <created>1557604886795</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1557604886795</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44228000" />
+    <option name="totallyTimeSpent" value="45278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="50" width="1151" height="748" extended-state="0" />
@@ -761,17 +763,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/reservation.js">
+    <entry file="file://$PROJECT_DIR$/mysql/order_table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="26" />
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/order_table.js">
+    <entry file="file://$PROJECT_DIR$/routes/reservation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="201">
+          <caret line="19" column="126" selection-start-line="19" selection-start-column="126" selection-end-line="19" selection-end-column="126" />
         </state>
       </provider>
     </entry>

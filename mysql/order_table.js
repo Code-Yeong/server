@@ -1,5 +1,5 @@
 let orderSql = {
-    "addOrder":"INSERT INTO Reservation(cusId,barberId,shopId,serveTime,serveName,money,status,comment,shopScpre,barberScore,createTime,finshedTime,commentTime) VALUES (?, ?, ?, ?, ?,?,1, '', 0, 0, ?,'','')",
+    "addOrder":"INSERT INTO Reservation(cusId,barberId,shopId,serveTime,serveName,money,status,comment,shopScpre,barberScore,createTime,finshedTime,commentTime,code) VALUES (?, ?, ?, ?, ?,?,1, '', 0, 0, ?,'','',?)",
     "commentOrder":"update Reservation set status=4, comment=?,shopScpre=?,barberScore=?,commentTime=? where id=?",
     "getBarberOrder":"select * from Reservation where barberId=? order by createTime DESC",
     "getShopOrder":"select * from Reservation where shopId=? order by createTime DESC",

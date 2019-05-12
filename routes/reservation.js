@@ -17,7 +17,7 @@ router.post('/addOrder',function (req,res,next) {
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
-        conn.query(orderSql.addOrder,[cusId,barberId,shopId,serveTime,serveName,money,Date.now()],function (err,result) {
+        conn.query(orderSql.addOrder,[cusId,barberId,shopId,serveTime,serveName,money,Date.now(),Math.floor(Math.random()*10000)],function (err,result) {
             if (err) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
