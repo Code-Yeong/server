@@ -53,7 +53,8 @@ router.post('/updateOrderStatus',function (req,res,next) {
 router.post('/updateVerifiedStatus',function (req,res,next) {
     let params=req.body;
     let id = params['id'];
-    let isEmpty=(id==null || status ==null);
+    console.log(id);
+    let isEmpty=(id==null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
