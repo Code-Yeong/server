@@ -84,6 +84,33 @@ router.post('/regist', function (req, res, next) {
   }
 
 });
+router.post('/update', function (req, res, next) {
+  console.log(Date.now()+':user update');
+  let params = req.body;
+  let name = params['name'];
+  let avatar = params['avatar'];
+  let nickName = params['nickName'];
+  let phone = params['phone'];
+  let description = params['description'];
+  let sex = params['sex'];
+  let id = params['id'];
+  console.log(req.body);
+  console.log(req.params);
+  console.log(req.query);
+  console.log(name == null);
+  let isEmpty =(name == null || phone == null || avatar == null||nickName == null || description == null || sex == null||id==null);
+  if(isEmpty){
+      res.jsonp({'result':'error', 'status':errorCode.parametersError});
+  }else{
+      conn.query(userSql.update, [name, avatar, nickName,phone,description,Date.now(),sex,id], function (err, result) {
+          if (err) {
+              res.jsonp({'result':'error', 'status':errorCode.dbError});
+          } else {
+              res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
+          }
+      });
+  }
+});
 
 router.post('/addAddress', function (req, res, next) {
     console.log(Date.now()+':user add address');

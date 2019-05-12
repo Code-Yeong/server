@@ -6,7 +6,8 @@ let orderSql = {
     "getCusOrder":"select r.id,r.createTime,r.address,r.serveTime,r.finshedTime,r.commentTime,r.cusId,r.barberId,r.shopId,r.serveName,r.status,r.money,r.comment,b.name as staffName,b.avatar as avatar,r.code as code from Reservation r,Barber b where r.barberId=b.id and r.cusId=? order by createTime DESC",
     "getStaffOrder":"select r.id,r.createTime,r.address,r.serveTime,r.finshedTime,r.commentTime,r.cusId,r.barberId,r.shopId,r.serveName,r.status,r.money,r.comment,u.name as cusName,u.avatar as avatar from Reservation r,User u where r.cusId=u._id and r.barberId=? order by serveTime ASC",
     "getBarberUnStartOrder":"select * from Reservation where barberId=? and status<3",
-    "updateOrderStatus":"update Reservation set status=? where id=?"
+    "updateOrderStatus":"update Reservation set status=? where id=?",
+    "updateVerifiedStatus":"update Reservation set verified=1 where id=?"
 };
 
 module.exports = orderSql;

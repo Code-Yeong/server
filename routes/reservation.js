@@ -50,6 +50,26 @@ router.post('/updateOrderStatus',function (req,res,next) {
 
 });
 
+router.post('/updateVerifiedStatus',function (req,res,next) {
+    let params=req.body;
+    let id = params['id'];
+    let isEmpty=(id==null || status ==null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(orderSql.updateVerifiedStatus,[id],function (err,result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
+            }
+        });
+    }
+
+
+});
+
 router.post('/commentOrder',function (req,res,next) {
     let params=req.body;
     let id = params['id'];
