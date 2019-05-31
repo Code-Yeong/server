@@ -8,7 +8,7 @@ let orderSql = {
     "getBarberUnStartOrder":"select * from Reservation where barberId=? and status<3",
     "updateOrderStatus":"update Reservation set status=? where id=?",
     "updateVerifiedStatus":"update Reservation set verified=1 where id=?",
-    "scan":"update Reservation set status=3 where id=? and and cusId=? and barberId=?",
+    "scan":"update Reservation set status=3 where id=? and cusId=? and barberId=?",
 };
 
 module.exports = orderSql;
