@@ -94,6 +94,26 @@ router.post('/commentOrder',function (req,res,next) {
 
 });
 
+router.post('/scan',function (req,res,next) {
+    let params=req.body;
+    let rId = params['rId'];
+    let barberId = params['barberId'];
+    let cusId = params['cusId'];
+    let isEmpty=(barberId==null || rId ==null||cusId==null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(orderSql.scan,[rId,cusId,barberId],function (err,result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
+            }
+        });
+    }
+});
+
 router.get('/getCusOrder',function (req,res,next) {
     console.log(req.query);
     console.log(req.body);
