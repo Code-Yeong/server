@@ -205,4 +205,22 @@ router.get('/getBarberUnStartOrder',function (req,res,next) {
     }
 });
 
+router.get('/listen/status',function (req,res,next) {
+    let params=req.query;
+    let rId=params['rId'];
+    let isEmpty=(rId==null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(orderSql.listenStatus,[rId],function (err,result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+            }
+        });
+    }
+});
+
 module.exports=router;

@@ -9,6 +9,7 @@ let orderSql = {
     "updateOrderStatus":"update Reservation set status=? where id=?",
     "updateVerifiedStatus":"update Reservation set verified=1 where id=?",
     "scan":"update Reservation set status=3 where id=? and cusId=? and barberId=?",
+    "listenStatus" : "select status from Reservation where id=?",
 };
 
 module.exports = orderSql;
