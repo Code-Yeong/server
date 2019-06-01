@@ -226,12 +226,12 @@ router.get('/listen/status',function (req,res,next) {
 //根据理发师id查找评论
 router.get('/comments/barber',function (req,res,next) {
     let params=req.query;
-    let cusId=params['cusId'];
-    let isEmpty=(cusId==null);
+    let barberId=params['barberId'];
+    let isEmpty=(barberId==null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
-        conn.query(orderSql.barberComment,[cusId],function (err,result) {
+        conn.query(orderSql.barberComment,[barberId],function (err,result) {
             if (err) {
                 console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});

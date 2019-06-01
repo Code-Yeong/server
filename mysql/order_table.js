@@ -10,7 +10,7 @@ let orderSql = {
     "updateVerifiedStatus":"update Reservation set verified=1 where id=?",
     "scan":"update Reservation set status=3 where id=? and cusId=? and barberId=?",
     "listenStatus" : "select status from Reservation where id=?",
-    "barberComment" : "select r.id as rId,r.comment, r.commentTime, r.cusId, u.avatar as cusAvatr,  u.nick_name as cusName,u.sex as cusSex,r.barberScore as starCount,s.avatar as shopAvatar, s.name as shopName, r.servename from Barber b, User u, Reservation r, Shop s where b.id=r.barberId and u._id=r.cusId and s.id=r.shopId and r.barberId=101 order by r.commentTime DESC;",
+    "barberComment" : "select r.id as rId,r.comment, r.commentTime, r.cusId, u.avatar as cusAvatr,  u.nick_name as cusName,u.sex as cusSex,r.barberScore as starCount,s.avatar as shopAvatar, s.name as shopName, r.servename from Barber b, User u, Reservation r, Shop s where b.id=r.barberId and u._id=r.cusId and s.id=r.shopId and r.barberId=? order by r.commentTime DESC;",
 };
 
 module.exports = orderSql;
