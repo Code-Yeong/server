@@ -50,7 +50,7 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
             result.status = errorCode.uploadSuccess;
             let filePath = `http://wd.chivan.cn:3000/images/${files[0].filename}`;
             if(role==='0'){
-                conn.query(userSql.changeAvatar,[filePath,userId],function (err,result) {
+                conn.query(userSql.changeAvatar,[filePath,userId],function (err,re) {
                     if (err) {
                         console.log(err);
                         result.status = errorCode.uploadFailed;
@@ -64,7 +64,7 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
                     res.end(JSON.stringify(result));
                 });
             }else if(role ==='1'){
-                conn.query(barberSql.changeAvatar,[filePath,userId],function (err,result) {
+                conn.query(barberSql.changeAvatar,[filePath,userId],function (err,re) {
                     if (err) {
                         console.log(err);
                         result.status = errorCode.uploadFailed;
