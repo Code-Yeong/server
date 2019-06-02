@@ -37,10 +37,9 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
     } else {
         result.status = errorCode.uploadSuccess;
         console.log(files[0]);
-        // let filePath = files[0].path;
-        //     ../public/images/1559494583561.jpg
+        let filePath = `http://wd.chivan.cn:3000/images/${files[0].filename}`;
         result.data = {
-            url: files[0].path
+            url: filePath
         };
         result.errMsg = '上传成功';
     }
