@@ -13,8 +13,10 @@ let storage = multer.diskStorage({
     filename: function (req, file, cb) {
         let originalName= file.originalname;
         let arr = originalName.split('.');
-
-        cb(null, `${Date.now()}.${arr[arr.length-1]}`)
+        if(arr!=null&&arr.length>0){
+            originalName = arr[arr.length-1];
+        }
+        cb(null, `${Date.now()}.${originalName}`);
     }
 });
 
@@ -24,14 +26,11 @@ let upload = multer({ storage: storage });
 
 // 文件上传请求处理，upload.array 支持多文件上传，第二个参数是上传文件数目
 router.post('/upload/img', upload.array('image',1),function (req, res, next) {
-    // upload.array('file', 1),
-    console.log('upload files');
-
+    console.log('开始上传图片');
     // 读取上传的图片信息
     let files = req.files;
-    console.log(files);
     // 设置返回结果
-    var result = {};
+    let result = {};
     if(files==null || files.length===0 || !files[0]) {
         result.status = errorCode.uploadFailed;
         result.errMsg = '上传失败';
