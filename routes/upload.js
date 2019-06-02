@@ -15,10 +15,12 @@ let storage = multer.diskStorage({
     }
 });
 
-let upload = multer({ storage: storage });
+let upload = multer({dest:"public/images/"}).single('image');
+
+// let upload = multer({ storage: storage });
 
 // 文件上传请求处理，upload.array 支持多文件上传，第二个参数是上传文件数目
-router.post('/upload/img', function (req, res, next) {
+router.post('/upload/img', upload,function (req, res, next) {
     // upload.array('file', 1),
     console.log('upload files');
 
