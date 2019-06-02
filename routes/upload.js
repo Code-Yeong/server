@@ -30,8 +30,11 @@ let upload = multer({ storage: storage });
 router.post('/upload/avatar', upload.array('image',1),function (req, res, next) {
     console.log('begin...');
     let params = req.body;
+    console.log(params);
     let userId= params.id;
+    console.log(userId);
     let role = params.role;//0:会员， 1：理发师， 2：店铺
+    console.log(role);
     let isEmpty =(userId == null || role == null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
