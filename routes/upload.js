@@ -61,6 +61,7 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
                         };
                         result.errMsg = '上传成功';
                     }
+                    res.end(JSON.stringify(result));
                 });
             }else if(role ==='1'){
                 conn.query(barberSql.changeAvatar,[filePath,userId],function (err,result) {
@@ -74,13 +75,14 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
                         };
                         result.errMsg = '上传成功';
                     }
+                    res.end(JSON.stringify(result));
                 });
             }else{
                 result.status = errorCode.uploadFailed;
                 result.errMsg = '上传失败';
+                res.end(JSON.stringify(result));
             }
         }
-        res.end(JSON.stringify(result));
     }
 });
 
