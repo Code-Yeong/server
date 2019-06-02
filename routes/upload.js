@@ -49,7 +49,7 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
         } else {
             result.status = errorCode.uploadSuccess;
             let filePath = `http://wd.chivan.cn:3000/images/${files[0].filename}`;
-            if(role===0){
+            if(role==='0'){
                 conn.query(userSql.changeAvatar,[filePath,userId],function (err,result) {
                     if (err) {
                         console.log(err);
@@ -62,7 +62,7 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
                         result.errMsg = '上传成功';
                     }
                 });
-            }else if(role ===1){
+            }else if(role ==='1'){
                 conn.query(barberSql.changeAvatar,[filePath,userId],function (err,result) {
                     if (err) {
                         console.log(err);
