@@ -11,7 +11,10 @@ let storage = multer.diskStorage({
         cb(null, '../public/images');
     },
     filename: function (req, file, cb) {
-        cb(null, `${Date.now()}-${file.originalname}`)
+        let originalName= file.originalname;
+        let arr = originalName.split('.');
+
+        cb(null, `${Date.now()}-${arr[arr.length-1]}`)
     }
 });
 
