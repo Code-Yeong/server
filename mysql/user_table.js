@@ -1,5 +1,6 @@
 let user = {
     'regist':"insert into User(name, nick_name,password,phone,regist_time,last_modify,status,level,sex,score,money) values(?,'',?,?,?,?,?,?,?,?,?)",
+    'changeAvatar':'update User set avatar=? where _id=?',
     'update':"update User set name=?, avatar=?,nick_name=?,phone=?,description=?,last_modify=?,sex=? where _id=?",
     'login':'select * from User where phone =? and password=?',
     'isPhoneExist': 'select * from User where phone=?',
