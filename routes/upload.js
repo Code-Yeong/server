@@ -25,7 +25,7 @@ let storage = multer.diskStorage({
 let upload = multer({ storage: storage });
 
 // 文件上传请求处理，upload.array 支持多文件上传，第二个参数是上传文件数目
-router.post('/upload/img', upload.array('image',1),function (req, res, next) {
+router.post('/upload/avatar', upload.array('image',1),function (req, res, next) {
     console.log('开始上传图片');
     // 读取上传的图片信息
     let files = req.files;
@@ -36,6 +36,9 @@ router.post('/upload/img', upload.array('image',1),function (req, res, next) {
         result.errMsg = '上传失败';
     } else {
         result.status = errorCode.uploadSuccess;
+        console.log(files[0]);
+        // let filePath = files[0].path;
+        //     ../public/images/1559494583561.jpg
         result.data = {
             url: files[0].path
         };
