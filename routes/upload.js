@@ -20,8 +20,8 @@ let storage = multer.diskStorage({
 let upload = multer({ storage: storage });
 
 // 文件上传请求处理，upload.array 支持多文件上传，第二个参数是上传文件数目
-router.post('/upload/img', upload.array('file', 1), function (req, res) {
-
+router.post('/upload/img', function (req, res) {
+    // upload.array('file', 1),
     console.log('upload files');
 
     // 读取上传的图片信息
