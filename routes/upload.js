@@ -45,15 +45,16 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
         let result = {};
         if (files == null || files.length === 0 || !files[0]) {
             result.status = errorCode.uploadFailed;
-            result.errMsg = '上传失败';
+            result.errMsg = '上传失败1';
         } else {
             result.status = errorCode.uploadSuccess;
             let filePath = `http://wd.chivan.cn:3000/images/${files[0].filename}`;
             if(role===0){
                 conn.query(userSql.changeAvatar,[filePath,userId],function (err,result) {
                     if (err) {
+                        console.log(err);
                         result.status = errorCode.uploadFailed;
-                        result.errMsg = '上传失败';
+                        result.errMsg = '上传失败2';
                     } else {
                         result.data = {
                             url: filePath
@@ -64,8 +65,9 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
             }else if(role ===1){
                 conn.query(barberSql.changeAvatar,[filePath,userId],function (err,result) {
                     if (err) {
+                        console.log(err);
                         result.status = errorCode.uploadFailed;
-                        result.errMsg = '上传失败';
+                        result.errMsg = '上传失败3';
                     } else {
                         result.data = {
                             url: filePath
