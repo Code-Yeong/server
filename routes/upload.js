@@ -29,6 +29,7 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
     console.log('开始上传图片');
     // 读取上传的图片信息
     let files = req.files;
+    console.log(req);
     // 设置返回结果
     let result = {};
     if(files==null || files.length===0 || !files[0]) {
