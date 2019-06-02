@@ -1,9 +1,7 @@
 let errorCode =  require("../utils/error_code");
 let express = require('express');
 let conn = require('../mysql/mysql');
-let uploadSql = require('../mysql/shop_table');
 let router = express.Router();
-
 let multer = require("multer");
 
 
@@ -36,7 +34,7 @@ router.post('/upload/img', function (req, res, next) {
         result.status = errorCode.uploadSuccess;
         result.data = {
             url: files[0].path
-        }
+        };
         result.errMsg = '上传成功';
     }
     res.end(JSON.stringify(result));

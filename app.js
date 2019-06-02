@@ -20,13 +20,18 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
+console.log(1);
 app.use(express.json());
+console.log(2);
 app.use(express.urlencoded({ extended: false }));
+console.log(3);
 app.use(cookieParser());
+console.log(4);
 app.use(express.static(path.join(__dirname, 'public')));
+console.log(5);
 
 // app.use('/', indexRouter);
-app.use('/fp', uploadRouter);
+app.use('/file', uploadRouter);
 app.use('/users', usersRouter);
 app.use('/shop', shopRouter);
 app.use('/login', loginRouter);
