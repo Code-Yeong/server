@@ -28,6 +28,7 @@ let upload = multer({ storage: storage });
 
 // 文件上传请求处理，upload.array 支持多文件上传，第二个参数是上传文件数目
 router.post('/upload/avatar', upload.array('image',1),function (req, res, next) {
+    console.log('begin...');
     let params = req.body;
     let userId= params.id;
     let role = params.role;//0:会员， 1：理发师， 2：店铺
