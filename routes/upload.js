@@ -14,7 +14,7 @@ let storage = multer.diskStorage({
         let originalName= file.originalname;
         let arr = originalName.split('.');
 
-        cb(null, `${Date.now()}-${arr[arr.length-1]}`)
+        cb(null, `${Date.now()}.${arr[arr.length-1]}`)
     }
 });
 
