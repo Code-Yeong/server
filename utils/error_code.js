@@ -6,6 +6,8 @@ let errorCode={
     'accountAlreadyExist':102,
     'parametersError':103,
     'dbError':104,
+    'uploadFailed':105,
+    'uploadSuccess':106,
 };
 
 module.exports = errorCode;
