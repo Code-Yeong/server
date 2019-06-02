@@ -1,12 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5b79adb-4dab-4c5f-9eba-3763f4d4ba48" name="Default Changelist" comment="">
+    <list default="true" id="a5b79adb-4dab-4c5f-9eba-3763f4d4ba48" name="Default Changelist" comment="上传图片">
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/lib/parse-path.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/lib/set-value.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/append-field/test/forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/buffer-from/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/buffer-from/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/buffer-from/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/buffer-from/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/deps/encoding/encoding-indexes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/deps/encoding/encoding.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/lib/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/lib/types/multipart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/lib/types/urlencoded.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/isarray/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/isarray/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/isarray/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/isarray/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/isarray/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/float.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/lib/_stream_duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/lib/_stream_passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/lib/_stream_readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/lib/_stream_transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/lib/_stream_writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/readable-stream/writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/string_decoder/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/string_decoder/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/string_decoder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/string_decoder/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/node_modules/string_decoder/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-types-multipart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-types-urlencoded.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-utils-decoder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/test/test-utils-parse-params.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/busboy/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-stream/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-stream/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/concat-stream/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/dicer-bench-multipart-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/formidable-bench-multipart-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/multipartser-bench-multipart-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/multiparty-bench-multipart-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/parted-bench-multipart-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/bench/parted-multipart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/lib/Dicer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/lib/HeaderParser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/lib/PartStream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/isarray/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/isarray/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/isarray/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/isarray/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/isarray/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/float.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/lib/_stream_duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/lib/_stream_passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/lib/_stream_readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/lib/_stream_transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/lib/_stream_writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/readable-stream/writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/string_decoder/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/string_decoder/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/string_decoder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/string_decoder/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/node_modules/string_decoder/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part1.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part2.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part3.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part4.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part5.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part6.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-noend/part7.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-wrongboundary/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-wrongboundary/preamble" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many-wrongboundary/preamble.error" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part1.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part2.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part3.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part4.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part5.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part6.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/many/part7.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part1.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/part2.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested-full/preamble.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part1.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/fixtures/nested/part2.header" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-endfinish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-headerparser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-multipart-extra-trailer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-multipart-nolisteners.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test-multipart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/dicer/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/example/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/readme.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/test/dash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/test/default_bool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/test/dotted.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/test/long.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/test/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/test/parse_modified.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/test/short.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/minimist/test/whitespace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/bin/cmd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/bin/usage.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/examples/pow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/readme.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/chmod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/clobber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/mkdirp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/opts_fs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/opts_fs_sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/perm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/perm_sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/race.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/rel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/return.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/return_sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/root.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/umask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mkdirp/test/umask_sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/lib/counter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/lib/file-appender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/lib/make-middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/lib/multer-error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/lib/remove-uploaded-files.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/storage/disk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/multer/storage/memory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/streamsearch/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/streamsearch/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/streamsearch/lib/sbmh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/streamsearch/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/example/tarray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/readme.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/test/server/undef_globals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/typedarray/test/tarray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/LICENCE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/immutable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/mutable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xtend/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/error_code.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/error_code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/upload.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +233,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-285">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="105">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -31,8 +242,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/upload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+            <state relative-caret-position="360">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/www">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="885">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1770">
+              <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -42,6 +280,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
               <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/reservation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="236" column="66" selection-start-line="236" selection-start-column="66" selection-end-line="236" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -60,15 +307,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql/barber_table.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -179,6 +417,11 @@
             <path>
               <item name="Server" type="b2602c69:ProjectViewProjectNode" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -239,21 +482,7 @@
       <workItem from="1555087413019" duration="2135000" />
       <workItem from="1556902547185" duration="13867000" />
       <workItem from="1559322026069" duration="310000" />
-      <workItem from="1559324252496" duration="4996000" />
-    </task>
-    <task id="LOCAL-00018" summary="添加商铺接口">
-      <created>1557118149312</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1557118149313</updated>
-    </task>
-    <task id="LOCAL-00019" summary="添加商铺接口">
-      <created>1557118405008</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1557118405008</updated>
+      <workItem from="1559324252496" duration="6024000" />
     </task>
     <task id="LOCAL-00020" summary="添加商铺接口">
       <created>1557164079345</created>
@@ -584,23 +813,37 @@
       <option name="project" value="LOCAL" />
       <updated>1559376706593</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="上传图片">
+      <created>1559463208696</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1559463208696</updated>
+    </task>
+    <task id="LOCAL-00068" summary="上传图片">
+      <created>1559465479704</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1559465479704</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55527000" />
+    <option name="totallyTimeSpent" value="56555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="76" y="30" width="1151" height="748" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.22035398" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.22035398" />
       <window_info id="Structure" order="1" sideWeight="0.5015244" side_tool="true" weight="0.22477876" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23628049" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23628049" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -628,7 +871,8 @@
     <MESSAGE value="添加订单表" />
     <MESSAGE value="添加订单扫码完成接口" />
     <MESSAGE value="根据理发师id查找评论内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="根据理发师id查找评论内容" />
+    <MESSAGE value="上传图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传图片" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/layout.pug">
@@ -688,13 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -716,13 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
-          <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/shop.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -740,31 +970,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/reservation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="236" column="66" selection-start-line="236" selection-start-column="66" selection-end-line="236" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/barber.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -775,10 +984,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/reservation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="236" column="66" selection-start-line="236" selection-start-column="66" selection-end-line="236" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1770">
+          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+        <state relative-caret-position="360">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
         </state>
       </provider>
     </entry>
