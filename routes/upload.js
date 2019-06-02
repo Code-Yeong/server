@@ -30,7 +30,6 @@ let upload = multer({ storage: storage });
 router.post('/upload/avatar', upload.array('image',1),function (req, res, next) {
     console.log('begin...');
     let params = req.body;
-    console.log(params);
     let userId= params.id;
     console.log(userId);
     let role = params.role;//0:会员， 1：理发师， 2：店铺
@@ -39,7 +38,7 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else {
-        console.log(`开始上传图片,用户角色：${role}, 用户id:${id}`);
+        console.log('开始上传图片');
         // 读取上传的图片信息
         let files = req.files;
         // 设置返回结果
