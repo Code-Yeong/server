@@ -8,19 +8,19 @@ let multer = require("multer");
 // 设置图片存储路径
 let storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, './uploads');
+        cb(null, '../public/images');
     },
     filename: function (req, file, cb) {
         cb(null, `${Date.now()}-${file.originalname}`)
     }
 });
 
-let upload = multer({dest:"public/images/"}).single('image');
+// let upload = multer({dest:"public/images/"}).single('image');
 
-// let upload = multer({ storage: storage });
+let upload = multer({ storage: storage });
 
 // 文件上传请求处理，upload.array 支持多文件上传，第二个参数是上传文件数目
-router.post('/upload/img', upload,function (req, res, next) {
+router.post('/upload/img', upload.array('image',1),function (req, res, next) {
     // upload.array('file', 1),
     console.log('upload files');
 
