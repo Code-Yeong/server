@@ -86,4 +86,44 @@ router.post('/upload/avatar', upload.array('image',1),function (req, res, next) 
     }
 });
 
+// 文件上传请求处理，upload.array 支持多文件上传，第二个参数是上传文件数目
+router.post('/barber/verify', upload.array('image',1),function (req, res, next) {
+    console.log('理发师认证...');
+    let params = req.body;
+    let userId= params.id;
+    let name = params.name;
+    let idcard =params.idcard;
+    console.log(userId);
+    let isEmpty =(userId == null || name == null||idcard == null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else {
+        console.log('开始上传图片');
+        // 读取上传的图片信息
+        let files = req.files;
+        // 设置返回结果
+        let result = {};
+        if (files == null || files.length === 0 || !files[0]) {
+            result.status = errorCode.uploadFailed;
+            result.errMsg = '上传失败1';
+        } else {
+            result.status = errorCode.uploadSuccess;
+            let filePath = `http://wd.chivan.cn:3000/images/${files[0].filename}`;
+            conn.query(barberSql.verify,[name,idcard,filePath,Date.now(),userId],function (err,re) {
+                if (err) {
+                    console.log(err);
+                    result.status = errorCode.uploadFailed;
+                    result.errMsg = '上传失败3';
+                } else {
+                    result.data = {
+                        url: filePath
+                    };
+                    result.errMsg = '上传成功';
+                }
+                res.end(JSON.stringify(result));
+            });
+        }
+    }
+});
+
 module.exports = router;
