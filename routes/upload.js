@@ -94,6 +94,8 @@ router.post('/barber/verify', upload.array('image',1),function (req, res, next) 
     let name = params.name;
     let idcard =params.idcard;
     console.log(userId);
+    console.log(name);
+    console.log(idcard);
     let isEmpty =(userId == null || name == null||idcard == null);
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});

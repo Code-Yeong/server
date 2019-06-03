@@ -8,7 +8,7 @@ let BarberSql = {
     'getAllAddress':'select * from Adderss where cusId=? and status!=0 order by midifyTime DESC',
     'updateAddress':'update Adderss set name=?,phone=?,address=?,status=?,midifyTime=? where id=?',
     'deleteAddress':'update Adderss set status=0,midifyTime=? where id=?',
-    'verify':'update Barber set name=?,idcard=?,certificate=?,last_modify=? where id=?',
+    'verify':'update Barber set name=?,idcard=?,certificate=?,last_modify=?,status=2 where id=?',
 };
 
 module.exports = BarberSql;
