@@ -21,7 +21,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -42,11 +42,12 @@ app.use(function(req, res, next) {
 
 // error handler
 app.use(function(err, req, res, next) {
-  // res.setHeader("Access-Control-Allow-Origin", "*");
-  // res.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
-  // res.setHeader("Access-Control-Max-Age", "3600");
-  // res.setHeader("Access-Control-Allow-Headers", "x-requested-with,Authorization");
-  // res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With");
+  res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+  res.header("X-Powered-By",' 3.2.1');
+  if(req.method==="OPTIONS") res.send(200);/*让options请求快速返回*/
+  else  next();
 
   // set locals, only providing error in development
   res.locals.message = err.message;
