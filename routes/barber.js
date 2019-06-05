@@ -185,7 +185,7 @@ router.post('/join/shop', function (req, res, next) {
                     res.jsonp({'result': 'ok', 'status': errorCode.loginSuccess});
                 }
             });
-        }else if(handle === 2){
+        }else if(handle === 0){
             conn.query(barberSql.cancelApplyShop, [bId], function (err, result) {
                 if (err) {
                     console.log(err);

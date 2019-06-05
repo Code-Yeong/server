@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a5b79adb-4dab-4c5f-9eba-3763f4d4ba48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/barber_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/barber_table.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/barber.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/barber.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -56,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/barber.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="164" column="11" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="11" />
+            <state relative-caret-position="377">
+              <caret line="187" column="31" lean-forward="true" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -83,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/error_code.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="90">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -92,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql/barber_table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="165">
+              <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -134,6 +133,7 @@
       <find>commentOrder</find>
       <find>uploadRouter</find>
       <find>uploadSuccess</find>
+      <find>id</find>
     </findStrings>
     <replaceStrings>
       <replace>Barber</replace>
@@ -173,8 +173,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="289" />
-    <option name="y" value="34" />
+    <option name="x" value="270" />
+    <option name="y" value="23" />
     <option name="width" value="1151" />
     <option name="height" value="745" />
   </component>
@@ -278,21 +278,7 @@
       <workItem from="1556902547185" duration="13867000" />
       <workItem from="1559322026069" duration="310000" />
       <workItem from="1559324252496" duration="16027000" />
-      <workItem from="1559711962952" duration="604000" />
-    </task>
-    <task id="LOCAL-00051" summary="添加订单表">
-      <created>1557604248359</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1557604248360</updated>
-    </task>
-    <task id="LOCAL-00052" summary="添加订单表">
-      <created>1557604559657</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1557604559657</updated>
+      <workItem from="1559711962952" duration="1969000" />
     </task>
     <task id="LOCAL-00053" summary="添加订单表">
       <created>1557604886795</created>
@@ -623,14 +609,28 @@
       <option name="project" value="LOCAL" />
       <updated>1559587180600</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="理发师申请加入店铺">
+      <created>1559712586641</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1559712586641</updated>
+    </task>
+    <task id="LOCAL-00101" summary="理发师申请加入店铺">
+      <created>1559714877881</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1559714877881</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67162000" />
+    <option name="totallyTimeSpent" value="68527000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="289" y="34" width="1151" height="745" extended-state="0" />
+    <frame x="270" y="23" width="1151" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.22035398" />
@@ -709,7 +709,8 @@
     <MESSAGE value="根据理发师id查找评论内容" />
     <MESSAGE value="上传图片" />
     <MESSAGE value="modify" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify" />
+    <MESSAGE value="理发师申请加入店铺" />
+    <option name="LAST_COMMIT_MESSAGE" value="理发师申请加入店铺" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/layout.pug">
@@ -835,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/error_code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -856,17 +850,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils/error_code.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysql/barber_table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="165">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/barber.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="164" column="11" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="11" />
+        <state relative-caret-position="377">
+          <caret line="187" column="31" lean-forward="true" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="31" />
         </state>
       </provider>
     </entry>
