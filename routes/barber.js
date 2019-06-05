@@ -176,7 +176,7 @@ router.post('/join/shop', function (req, res, next) {
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
-        if(handle === '1') {
+        if(handle === 1) {
             conn.query(barberSql.applyShop, [sId,Date.now(), bId], function (err, result) {
                 if (err) {
                     console.log(err);
@@ -185,7 +185,7 @@ router.post('/join/shop', function (req, res, next) {
                     res.jsonp({'result': 'ok', 'status': errorCode.loginSuccess});
                 }
             });
-        }else if(handle === '2'){
+        }else if(handle === 2){
             conn.query(barberSql.cancelApplyShop, [bId], function (err, result) {
                 if (err) {
                     console.log(err);
