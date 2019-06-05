@@ -162,6 +162,44 @@ router.post('/deleteAddress', function (req, res, next) {
     }
 });
 
+//理发师申请加入店铺
+router.post('/join/shop', function (req, res, next) {
+    console.log(Date.now()+':user apply shop');
+    let params = req.body;
+    let bId = params['id'];
+    let sId = params['shopId'];
+    let handle=params['handle'];//0:取消申请 1：申请加入
+    console.log(req.body);
+    console.log(req.params);
+    console.log(req.query);
+    let isEmpty =(bId==null||sId==null||handle==null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        if(handle === '1') {
+            conn.query(barberSql.applyShop, [sId,Date.now(), bId], function (err, result) {
+                if (err) {
+                    console.log(err);
+                    res.jsonp({'result': 'error', 'status': errorCode.dbError});
+                } else {
+                    res.jsonp({'result': 'ok', 'status': errorCode.loginSuccess});
+                }
+            });
+        }else if(handle === '2'){
+            conn.query(barberSql.cancelApplyShop, [bId], function (err, result) {
+                if (err) {
+                    console.log(err);
+                    res.jsonp({'result': 'error', 'status': errorCode.dbError});
+                } else {
+                    res.jsonp({'result': 'ok', 'status': errorCode.loginSuccess});
+                }
+            });
+        }else{
+            res.jsonp({'result':'error', 'status':errorCode.parametersError});
+        }
+    }
+});
+
 router.get('/getAllAddress', function (req, res, next) {
     console.log(Date.now()+':user get all address');
     // let params = req.body;

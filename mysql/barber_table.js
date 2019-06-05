@@ -9,6 +9,9 @@ let BarberSql = {
     'updateAddress':'update Adderss set name=?,phone=?,address=?,status=?,midifyTime=? where id=?',
     'deleteAddress':'update Adderss set status=0,midifyTime=? where id=?',
     'verify':'update Barber set name=?,idcard=?,certificate=?,last_modify=?,status=2 where id=?',
+    'applyShop':'update Barber set shop=?,shopStatus=1,submitTime=? where id=?',
+    'admitApplyShop':'update Barber set shopStatus=2,admitTime=? where id=?',
+    'cancelApplyShop':'update Barber set shopStatus=0 where id=?',
 };
 
 module.exports = BarberSql;
