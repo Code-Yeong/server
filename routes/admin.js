@@ -63,25 +63,13 @@ router.post('/add/shop',function (req,res,next) {
     if(isEmpty){
         res.jsonp({'result':'error', 'status':errorCode.parametersError});
     }else{
-        conn.query(shopSql.addShop, [phone], function (err, result) {
+        conn.query(shopSql.addShop, [id,name,owner,avatar,level,status,address,license,authMethod,description,registTime,lastModify], function (err, result) {
             if (err) {
-                console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
             } else {
-                if(result!=null && result.length === 0) {
-                    conn.query(barberSql.regist, [id,name,owner,avatar,level,status,address,license,authMethod,description,registTime,lastModify], function (err, result) {
-                        if (err) {
-                            res.jsonp({'result':'error', 'status':errorCode.dbError});
-                        } else {
-                            res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
-                        }
-                    });
-                }else{
-                    res.jsonp({'result':'error','status':errorCode.accountAlreadyExist});
-                }
+                res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
             }
         });
-
     }
 });
 
