@@ -65,6 +65,7 @@ router.post('/add/shop',function (req,res,next) {
     }else{
         conn.query(shopSql.addShop, [id,name,owner,avatar,level,status,address,license,authMethod,description,registTime,lastModify], function (err, result) {
             if (err) {
+                console.log(err);
                 res.jsonp({'result':'error', 'status':errorCode.dbError});
             } else {
                 res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
