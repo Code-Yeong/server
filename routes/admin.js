@@ -43,4 +43,47 @@ router.get('/search/shop', function(req, res, next) {
     });
 });
 
+
+router.post('/add/shop',function (req,res,next) {
+    let params = req.body;
+    let id = Date.now();
+    let name = params.name;
+    let owner = '0';
+    let avatar = params.avatar;
+    let level = params.level;
+    let status='1';
+    let address = params.address;
+    let license = '1001';
+    let authMethod = '0';
+    let description = params.description;
+    let registTime = Date.now();
+    let lastModify = Date.now();
+    let isEmpty = (name == null || avatar == null || level == null || address == null||description == null);
+
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else{
+        conn.query(shopSql.addShop, [phone], function (err, result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                if(result!=null && result.length === 0) {
+                    conn.query(barberSql.regist, [id,name,owner,avatar,level,status,address,license,authMethod,description,registTime,lastModify], function (err, result) {
+                        if (err) {
+                            res.jsonp({'result':'error', 'status':errorCode.dbError});
+                        } else {
+                            res.jsonp({'result':'ok', 'status':errorCode.loginSuccess});
+                        }
+                    });
+                }else{
+                    res.jsonp({'result':'error','status':errorCode.accountAlreadyExist});
+                }
+            }
+        });
+
+    }
+});
+
+
 module.exports = router;
