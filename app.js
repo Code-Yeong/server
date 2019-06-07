@@ -7,6 +7,7 @@ let cors = require('cors');
 
 let indexRouter = require('./routes/index');
 let adminRouter = require('./routes/admin');
+let serveRouter = require('./routes/serve');
 let uploadRouter = require('./routes/upload');
 let usersRouter = require('./routes/users');
 let shopRouter = require('./routes/shop');
@@ -30,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // app.use('/', indexRouter);
 app.use('/admin', adminRouter);
+app.use('/serve', serveRouter);
 app.use('/file', uploadRouter);
 app.use('/users', usersRouter);
 app.use('/shop', shopRouter);
