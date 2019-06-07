@@ -41,6 +41,8 @@ router.post('/update',function (req,res,next) {
     console.log('修改服务类型信息');
     let params=req.body;
     console.log(params);
+    console.log(params.keys);
+    console.log(params.values);
     res.jsonp({'key':params.keys,'values':params.values});
 });
 
