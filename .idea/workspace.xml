@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5b79adb-4dab-4c5f-9eba-3763f4d4ba48" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-    </list>
+    <list default="true" id="a5b79adb-4dab-4c5f-9eba-3763f4d4ba48" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -46,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/serve.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="516">
+              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -291,14 +288,7 @@
       <workItem from="1556902547185" duration="13867000" />
       <workItem from="1559322026069" duration="310000" />
       <workItem from="1559324252496" duration="16027000" />
-      <workItem from="1559711962952" duration="11758000" />
-    </task>
-    <task id="LOCAL-00067" summary="上传图片">
-      <created>1559463208696</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1559463208696</updated>
+      <workItem from="1559711962952" duration="12094000" />
     </task>
     <task id="LOCAL-00068" summary="上传图片">
       <created>1559465479704</created>
@@ -636,11 +626,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559893759157</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="添加服务类型相关接口">
+      <created>1559896783438</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1559896783438</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78316000" />
+    <option name="totallyTimeSpent" value="78652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="103" y="23" width="1318" height="745" extended-state="0" />
@@ -726,7 +723,8 @@
     <MESSAGE value="添加管理员查询店铺接口" />
     <MESSAGE value="新增管理员添加店铺接口" />
     <MESSAGE value="添加管理员登录接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加管理员登录接口" />
+    <MESSAGE value="添加服务类型相关接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加服务类型相关接口" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/views/layout.pug">
@@ -910,8 +908,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/serve.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="516">
+          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
         </state>
       </provider>
     </entry>
