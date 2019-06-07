@@ -3,8 +3,31 @@ let express = require('express');
 let conn = require('../mysql/mysql');
 let barberSql = require('../mysql/barber_table');
 let shopSql = require('../mysql/shop_table');
-let addressSql = require('../mysql/address_table');
+let adminSql = require('../mysql/admin_table');
 let router = express.Router();
+
+
+router.get('/login', function (req, res, next) {
+    console.log(Date.now()+':user login');
+    let params = req.query;
+    let phone = params['phone'];
+    let password = params['password'];
+    console.log(req.body);
+    let isEmpty =(phone == null || password == null);
+    if(isEmpty){
+        res.jsonp({'result':'error', 'status':errorCode.parametersError});
+    }else {
+        conn.query(adminSql.login, [phone, password], function (err, result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+            }
+        });
+    }
+});
+
 
 router.get('/search/shop', function(req, res, next) {
     console.log(Date.now()+':admin get all shop');
