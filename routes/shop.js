@@ -15,7 +15,7 @@ router.get('/getAllShop', function(req, res, next) {
             for(let m=0;m<result.length;m++){
                 let shop = result[m];
                 // urls.push('select * from Barber where shop='+shop['id']);
-                urls+=('select * from Barber where shop='+shop['id']+'and shopStatus=2');
+                urls+=('select * from Barber where shop='+shop['id']+' and shopStatus=2');
                 urls+=';';
             }
             urls = urls.substring(0,urls.length-1);
