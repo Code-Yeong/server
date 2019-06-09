@@ -97,5 +97,19 @@ router.post('/add/shop',function (req,res,next) {
     }
 });
 
+router.get('/order/list', function (req, res, next) {
+    console.log(Date.now()+':admin order list');
+    console.log(req.body);
+        conn.query(adminSql.queryAllOrder, [], function (err, result) {
+            if (err) {
+                console.log(err);
+                res.jsonp({'result':'error', 'status':errorCode.dbError});
+            } else {
+                res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+            }
+        });
+});
+
+
 
 module.exports = router;
