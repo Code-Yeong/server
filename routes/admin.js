@@ -136,6 +136,19 @@ router.get('/barber/list', function (req, res, next) {
     });
 });
 
+router.get('/serve/list', function (req, res, next) {
+    console.log(Date.now()+':admin serve list');
+    console.log(req.body);
+    conn.query(adminSql.queryServeList, [], function (err, result) {
+        if (err) {
+            console.log(err);
+            res.jsonp({'result':'error', 'status':errorCode.dbError});
+        } else {
+            res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+        }
+    });
+});
+
 
 
 module.exports = router;
