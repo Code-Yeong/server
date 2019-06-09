@@ -110,6 +110,32 @@ router.get('/order/list', function (req, res, next) {
         });
 });
 
+router.get('/user/list', function (req, res, next) {
+    console.log(Date.now()+':admin order list');
+    console.log(req.body);
+    conn.query(adminSql.queryAllUser, [], function (err, result) {
+        if (err) {
+            console.log(err);
+            res.jsonp({'result':'error', 'status':errorCode.dbError});
+        } else {
+            res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+        }
+    });
+});
+
+router.get('/barber/list', function (req, res, next) {
+    console.log(Date.now()+':admin order list');
+    console.log(req.body);
+    conn.query(adminSql.queryAllBarber, [], function (err, result) {
+        if (err) {
+            console.log(err);
+            res.jsonp({'result':'error', 'status':errorCode.dbError});
+        } else {
+            res.jsonp({'result':result, 'status':errorCode.loginSuccess});
+        }
+    });
+});
+
 
 
 module.exports = router;
